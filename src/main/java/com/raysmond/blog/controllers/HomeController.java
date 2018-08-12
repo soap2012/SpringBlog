@@ -19,6 +19,7 @@ public class HomeController {
     @Autowired
     private AppSetting appSetting;
 
+
     @GetMapping(value = "")
     public String index(@RequestParam(defaultValue = "1") int page, Model model) {
         page = page < 1 ? 0 : page - 1;
